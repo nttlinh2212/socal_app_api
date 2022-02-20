@@ -1,0 +1,13 @@
+{
+    "type":"object",
+    "properties":{
+        "desc":{
+            "type":"string"
+        },
+        "img":{
+            "type":"string"
+        }
+    },
+    "required":[],
+    "additionalProperties":false
+}
