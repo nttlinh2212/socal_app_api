@@ -15,6 +15,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 const PORT_FE = process.env.PORT_FE;
+const FE_URL = process.env.FE_URL;
 
 app.use(express.json());
 app.use(morgan('dev'))
@@ -22,7 +23,10 @@ app.use(cors({
     origin:[
         `http://localhost:${PORT_FE}`,
         `http://localhost:3001`,
-        'https://6213181d8a61930007031748--social-app-plus.netlify.app'
+        'https://6213181d8a61930007031748--social-app-plus.netlify.app',
+        'https://62131c0d23a946480bb0cc6d--social-app-plus.netlify.app',
+        FE_URL
+        
     ],
     //cross-origin-resource-policy: same-origin
     methods: 'GET,PATCH,PUT,POST,DELETE'
