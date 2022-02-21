@@ -21,7 +21,8 @@ app.use(morgan('dev'))
 app.use(cors({
     origin:[
         `http://localhost:${PORT_FE}`,
-        `http://localhost:3001`
+        `http://localhost:3001`,
+        'https://6213181d8a61930007031748--social-app-plus.netlify.app'
     ],
     //cross-origin-resource-policy: same-origin
     methods: 'GET,PATCH,PUT,POST,DELETE'
